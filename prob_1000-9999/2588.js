@@ -23,7 +23,7 @@ function solution(A, B) {
     output 472 * 385 과정
     */
     
-
+  
     let num1 = parseInt(((B%100)%10))*A; //5
     let num2 = parseInt((B%100)/10)*A; //8
     let num3 = parseInt(B/100)*A;//3
@@ -34,7 +34,10 @@ function solution(A, B) {
     console.log(num3);
 
     console.log(num3*100+num2*10+num1);
-    
+   
+
+
+
 
 
     
