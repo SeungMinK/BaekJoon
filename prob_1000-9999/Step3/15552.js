@@ -10,9 +10,11 @@ function solution(N) {
 
     let size = input[0];
     let temp;
+    let tempString='';
     for (let i = 1; i <= size; i++) {
         temp = input[i].toString().split(' ');
-        console.log(parseInt(temp[0]) + parseInt(temp[1]));
+        tempString+=((parseInt(temp[0]) + parseInt(temp[1]))+'\n');
     }
+    console.log(tempString);
 
 }
