@@ -9,7 +9,7 @@ solution(input);
 function solution(N) {
 
     let size = input[0];
-    let temp;
+    let temp =0;
     for (let i = 1; i <= size; i++) {
         temp = input[i].toString().split(' ');
         console.log(parseInt(temp[0]) + parseInt(temp[1]));
