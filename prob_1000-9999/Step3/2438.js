@@ -11,6 +11,10 @@ function solution(N) {
     let resultString ='';
     for(var i= 1; i<=N; i++){
 
+        for(var k =N; k>i; k--){
+            resultString += ' ';
+        }
+
         for(var j=0;j<i;j++){
             resultString += '*';
         }
