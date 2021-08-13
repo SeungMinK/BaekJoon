@@ -9,14 +9,14 @@ solution(input);
 function solution(input) {
   
     let i=0;
-    let tempNum1=0;
-    let tempNum2=0;
-    let Arr ;
-    for(i=0;i<input.length;i++){
-        Arr = input[i].split(' ').map(str => Number(str));
-    }
-   console.log(Arr);
-  
+    let value = true;
 
+    while(value){
+
+        input[i]=input[i].split(' ');
+        console.log((+input[i][0])+(+input[i][1]));
+        value = input[++i] ?? false;  
+        
+    }
 }
 
