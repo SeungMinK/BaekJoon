@@ -13,19 +13,19 @@ function solution(input) {
     let postNum;
     let num = input < 10 ? '0'+input : input+'';
     let result = num;
-    let count =1;
-    let check = true;
+    let count = 0;
+
  
 
-    while(check){
+    do{
 
         preNum = num[1];
-        postNum = (+num[0])+(+num[1]);
-        postNum = postNum>=10 ? (postNum+'')[1] : postNum;
+        sum = (+num[0])+(+num[1]);
+        postNum = sum>=10 ? (sum+'')[1] : sum;
         num = preNum+postNum;
-        check = result===num ? false : count ++;
+        count ++;
    
-    }
+    }while(result!==num);
     console.log(count);
 
 }
