@@ -8,11 +8,10 @@ solution(input);
 
 function solution(input) {
   
-    
   
     let preNum;
     let postNum;
-    let num = input < 10 ? '0'+input : input+''.split(' ');
+    let num = input < 10 ? '0'+input : input+'';
     let result = num;
     let count =1;
     let check = true;
@@ -24,16 +23,10 @@ function solution(input) {
         postNum = (+num[0])+(+num[1]);
         postNum = postNum>=10 ? (postNum+'')[1] : postNum;
         num = preNum+postNum;
-        if(result === num) check = false;
-        else count++;
+        check = result===num ? false : count ++;
+   
     }
     console.log(count);
-  
-   
-
-
-  
-
 
 }
 
