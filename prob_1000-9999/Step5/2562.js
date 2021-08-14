@@ -13,6 +13,7 @@ function solution(input) {
     }
     console.log(max);
     console.log(input.indexOf(max+'')+1);
+    
 
 }
 
