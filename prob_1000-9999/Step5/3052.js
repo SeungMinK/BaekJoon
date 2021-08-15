@@ -11,8 +11,7 @@ function solution(input) {
   let j = 0;
   let check = false;
   let result;
-
-  for (let i = 0; i < input.length; i++) {
+  for (let i = 0; i < 10; i++) {
     result = input[i] % divNumber;
     check = false;
     for (j = 0; j < array.length; j++) {
