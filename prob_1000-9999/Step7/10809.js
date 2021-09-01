@@ -14,6 +14,7 @@ function solution(input) {
     index = text[i].charCodeAt() - 97; //소문자 a는 아스키코드로 97번
     if (arrAlpha[index] == -1) arrAlpha[index] = i; //중복되는 문자열은 맨 처음 나온 index로 저장
   }
+
   // 모든 ,를 제거하기위해 /제거할 문자/g 형식을 사용함 replace.(/제거할문자/g , '대체할 텍스트');
   console.log((arrAlpha + '').replace(/,/g, ' '));
 }
