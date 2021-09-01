@@ -26,7 +26,7 @@ function solution(input) {
     }
   }
 
-  //max값이 2개 이상이면 ? 아스키코드값인 63을 만들기위해 -2 를 대입
+  //max값이 2개 이상이면 '?' 아스키코드값인 63을 만들기위해 -2 를 대입
   for (let k = 0; k < arrAlpha.length; k++) {
     if (arrAlpha[k] == maxCount) {
       if (check == false) check = true;
